@@ -1,0 +1,113 @@
+/* Schrijf hier je CSS */
+table {
+    background-color: #c0c0c0;
+    border-collapse: separate;
+    border-spacing: 0.2rem;
+}
+
+td {
+    background-color: #f0f0d0;
+    width: 30px;
+    height: 30px;
+    min-width: 30px;
+    min-height: 30px;
+}
+
+td p {
+    text-align: center;
+    margin: auto;
+}
+
+td:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+#playing-field {
+    display: flex;
+    justify-content: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.state-0 {
+    background-color: #b8e3cd;
+}
+
+.state-1 {
+    background-color: #c9adad;
+}
+
+.state-2 {
+    background-color: #c49f9f;
+}
+
+.state-3 {
+    background-color: #bf8686;
+}
+
+.state-4 {
+    background-color: #b57070;
+}
+
+.state-5 {
+    background-color: #804545;
+}
+
+.state-6 {
+    background-color: #783737;
+}
+
+.state-7 {
+    background-color: #571b1b;
+}
+
+.state-8 {
+    background-color: #420d0d;
+}
+
+.flag {
+    background-image: url("./assets/vlag.png");
+    background-repeat: no-repeat;
+
+}
+
+.bomb {
+    background-color: black;
+}
+
+.slidecontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    margin: 8px;
+}
+
+.slidecontainer p {
+    margin-left: 8px;
+}
+
+button {
+    padding: 8px;
+    border-radius: 4px;
+    background-color: #b8e3cd;
+}
+button:hover {
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #a7f7cf;
+}
+
+.columns {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.column {
+    padding: 16px;
+}

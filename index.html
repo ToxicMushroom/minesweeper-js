@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <title>Minesweeper</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="code.js"></script>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css"> 
+</head>
+<body>
+    <div id="game">
+        <div id="playing-field">
+            
+        </div>
+        <div class="columns">
+            <div class="column">
+                <button onclick="newGame()">new game</button>
+            </div>
+            <div class="column">
+                <div class="slidecontainer">
+                    Width
+                    <input type="range" min="1" max="100" value="30" class="slider" id="width-slider">
+                    <p id="width-value">30</p>
+                </div>
+                <div class="slidecontainer">
+                    Height
+                    <input type="range" min="1" max="50" value="16" class="slider" id="height-slider">
+                    <p id="height-value">16</p>
+                </div>
+                <div class="slidecontainer">
+                    Mines
+                    <input type="range" min="1" max="100" value="99" class="slider" id="mines-slider">
+                    <p id="mines-value">99</p>
+                </div>
+            </div>
+            <div class="column">
+                <div>
+                    Playtime: <span id="playTime">0</span> seconds
+                </div>
+                <div>
+                    Clicks: <span id="clickCounter">0</span>
+                </div>
+                <div>
+                    Game State: <span id="gameState">not playing</span>
+                </div>
+                <div>
+                    Flags left: <span id="flagCounter">0</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
